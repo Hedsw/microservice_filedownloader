@@ -47,7 +47,7 @@ def starter(urls):
     for name in filenames:
         processThread = threading.Thread(target=downloader, args=(name,filenames)) # parameters and functions have to be passed separately
         processThread.start() # START THE THREAD
-    
+        #processThread.join()
     return True
 
-#starter("WoW")
+starter("WoW")

@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request
 from trmmfiledownloader import starter as trmm_downloader
 from converter import starter as nc4convstarter
-
+import time
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
+url = "test"
 
 @app.route('/', methods=['GET'])
 def main():
@@ -31,6 +32,9 @@ def nc4convertergeotif():
 def oneshot():
     covertResult = False
     result = trmm_downloader(url)
+
+    print("TRMM Is done")
+    time.sleep(1)
     if result == True:
         covertResult = nc4convstarter()
         if covertResult == True:
