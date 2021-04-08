@@ -40,14 +40,14 @@ def downloader(filename,urls):
     except Exception as e:
         print(" File not found, please refer to the website manually for download link", e)
 
-
 def starter(urls):
     filenamesget("wow") # File name collector
     
     for name in filenames:
         processThread = threading.Thread(target=downloader, args=(name,filenames)) # parameters and functions have to be passed separately
         processThread.start() # START THE THREAD
-        #processThread.join()
+    # Join Thread HERE. Because For loop is over, then other Thread will be started. before then next Thread should be waited.
+    processThread.join()
     return True
 
-starter("WoW")
+#starter("WoW")

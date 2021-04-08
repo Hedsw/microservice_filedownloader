@@ -33,8 +33,8 @@ def starter():
         
         processThread = threading.Thread(target=nc4converter, args=(i,lists)) # parameters and functions have to be passed separately
         processThread.start() # START THE THREAD
-        processThread.join()
+        #processThread.join()
         #nc4converter(i, lists) 
     return True
 
-starter()
+#starter()

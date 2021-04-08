@@ -34,7 +34,7 @@ def oneshot():
     result = trmm_downloader(url)
 
     print("TRMM Is done")
-    time.sleep(1)
+    time.sleep(0.5)
     if result == True:
         covertResult = nc4convstarter()
         if covertResult == True:
