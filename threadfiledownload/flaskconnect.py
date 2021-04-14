@@ -32,15 +32,15 @@ def nc4convertergeotif():
 def oneshot():
     covertResult = False
     result = trmm_downloader(url)
-
+    #print("H?") http://0.0.0.0:5001/one-shot/v1
     print("TRMM Is done")
     time.sleep(0.5)
     if result == True:
         covertResult = nc4convstarter()
         if covertResult == True:
-            return "<h1> trmm downlaod is finished and converter is finished"
+            return "<h1> trmm download is finished and converter is finished"
     else:
-        return "<h1> trmm_downlaoder is failed"
+        return "<h1> trmm_downloader is failed"
     
     return "<h1> File Downloaded"
 
@@ -55,9 +55,9 @@ def urldownloader():
     if result == True:
         covertResult = nc4convstarter()
         if covertResult == True:
-            return "<h1> trmm downlaod is finished and converter is finished"
+            return "<h1> trmm download is finished and converter is finished"
     else:
-        return "<h1> trmm_downlaoder is failed"
+        return "<h1> trmm_downloader is failed"
     
     return render_template('index.html')
     

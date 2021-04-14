@@ -51,3 +51,40 @@ def starter(urls):
     return True
 
 #starter("WoW")
+
+'''
+from bs4 import BeautifulSoup
+import urllib.request as urllib2
+import re
+import requests
+import wget
+import os
+
+def getfilename(url):
+    req = urllib2.Request(url)
+    sourcecode = urllib2.urlopen(url).read()
+    soup = BeautifulSoup(sourcecode, 'html.parser')
+
+    for href in soup.find("table").find_all('a', href=re.compile("nc4")):
+        fname = href["href"]
+        filenames.append(fname)
+        
+    setfile = set(filenames)
+    filenames.clear()
+    list_set = list(setfile)
+    list_set.sort()
+    for i in list_set:
+        if xml not in i:
+            filenames.append(i)
+
+def downloader(filename,urls):
+    
+    try:
+        os.system('wget -P DIRECTORY--user ID --password PASSWORD %s/%s' %(url,filename))
+    except Exception as e:
+        print(" ERROR", e)
+
+'''
+
+
+
