@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<DATA>
+
+<TRMM_RT>
+    <LINK>https://disc2.gesdisc.eosdis.nasa.gov/data/TRMM_RT/TRMM_3B42RT_Daily.7/2002/01/</LINK>
+    <TYPES>TRMM_3B42RT_Daily.7</TYPES>
+    <YEAR>2002</YEAR>
+    <MONTH>01</MONTH>
+
+
+    <LINK>https://disc2.gesdisc.eosdis.nasa.gov/data/TRMM_RT/TRMM_3B42RT_Daily.7/2002/01/</LINK>
+    <TYPES>TRMM_3B42RT_Daily.7</TYPES>
+    <YEAR>2002</YEAR>
+    <MONTH>02</MONTH>
+
+    <LINK>https://disc2.gesdisc.eosdis.nasa.gov/data/TRMM_RT/TRMM_3B42RT_Daily.7/2002/01/</LINK>
+    <TYPES>TRMM_3B42RT_Daily.7</TYPES>
+    <YEAR>2002</YEAR>
+    <MONTH>02</MONTH>
+</TRMM_RT>
+
+</DATA>
