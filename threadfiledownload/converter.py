@@ -1,4 +1,3 @@
-
 from osgeo import gdal
 from glob import glob
 import numpy as numpy

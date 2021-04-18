@@ -54,7 +54,7 @@ def schedular():
         if trmmsignal == True:
             nc4convstarter()
             return render_template('index.html')
-
+        
     elif request.method == 'GET':
         return render_template('index.html')
 
@@ -66,5 +66,3 @@ def parse(period1, period2):
     return tmp[0], tmp[1], tmp2[0], tmp2[1]
 
 app.run(host='0.0.0.0', port=5001)
-
-
